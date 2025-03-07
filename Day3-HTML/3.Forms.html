@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>Forms</title>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <fieldset>
+        <legend>HTMLForms</legend>
+    <form>
+        <label for="name">User Name:<font color="red">*</font></label>
+        <input type="text" placeholder="Enter Name" required  pattern="[A-Z,a-z]{8,10}" title="pls enter 8 to 10 characters"><br><br>
+        <label for="number">Phone number:</label>
+        <input type="text" placeholder="enter number" pattern="[0-9],{10}"><br><br>
+        <label for="dob">date of birth</label>
+        <input type="datetime-local"><br><br>
+        <label for="email">e-mail id:</label>
+        <input type="email"name="email"id="email" placeholder="enter email id" required><br><br>
+        <label for="gender">gender:</label>
+        <input type="radio" name="gen" id="gen" >male
+        <input type="radio" name="gen" id="gen" >female
+        <input type="radio" name="gen" id="gen" >prefer not to say<br><br>
+        <label for="resume">upload resume:</label>
+        <input type="file"><br><br>
+        <label for="city">enter your city:</label>
+        <input list="city">
+        <datalist id="city">
+            <option value="anakapalli">anakapalli</option>
+            <option value="vizag">vizag</option>
+            <option value="hyderabad">hyderabad</option>
+        </datalist><br><br>
+        <input type="submit" value="register now">
+        <input type="reset" value="cancel">
+    </fieldset>
+        <h3>Extra tags:</h3>
+    <fieldset>
+        <legend>More tags</legend>
+        <label for="colors">select color:</label>
+        <input type="color"><br><br>
+        <label for="more data">Explain:</label>
+        <input type="textarea" placeholder="description"><br><br>
+        <label for="rate">give rate on 1-100</label>
+        <input type="range" id="rate" max="100" min="1"><br><br>
+        <label for="rate">SELECT BATCH:</label>
+        <select name="group" id="group">
+            <option value="group">batch1</option>
+            <option value="group">batch2</option>
+            <option value="group">batch3</option>
+        </select>
+    </fieldset>
+    </form>
+</body>
+</html>
